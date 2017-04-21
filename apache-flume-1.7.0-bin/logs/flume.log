@@ -1,0 +1,1047 @@
+14 Apr 2017 22:49:20,849 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider.start:62)  - Configuration provider starting
+14 Apr 2017 22:49:20,893 INFO  [conf-file-poller-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider$FileWatcherRunnable.run:134)  - Reloading configuration file:conf/flume-twitter.conf
+14 Apr 2017 22:49:20,952 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 22:49:20,954 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 22:49:20,955 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 22:49:20,976 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:930)  - Added sinks: HDFS Agent: TwitterAgent
+14 Apr 2017 22:49:20,976 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 22:49:20,976 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 22:49:20,977 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 22:49:20,977 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 22:49:20,977 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 22:49:21,095 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration.validateConfiguration:140)  - Post-validation flume configuration contains configuration for agents: [TwitterAgent]
+14 Apr 2017 22:49:21,095 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:147)  - Creating channels
+14 Apr 2017 22:49:21,176 INFO  [conf-file-poller-0] (org.apache.flume.channel.DefaultChannelFactory.create:42)  - Creating instance of channel MemChannel type memory
+14 Apr 2017 22:49:21,263 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:201)  - Created channel MemChannel
+14 Apr 2017 22:49:21,269 INFO  [conf-file-poller-0] (org.apache.flume.source.DefaultSourceFactory.create:41)  - Creating instance of source Twitter, type com.cloudera.flume.source.TwitterSource
+14 Apr 2017 22:49:21,665 INFO  [conf-file-poller-0] (org.apache.flume.sink.DefaultSinkFactory.create:42)  - Creating instance of sink: HDFS, type: hdfs
+14 Apr 2017 22:49:21,816 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.getConfiguration:116)  - Channel MemChannel connected to [Twitter, HDFS]
+14 Apr 2017 22:49:21,834 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:137)  - Starting new configuration:{ sourceRunners:{Twitter=EventDrivenSourceRunner: { source:com.cloudera.flume.source.TwitterSource{name:Twitter,state:IDLE} }} sinkRunners:{HDFS=SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@73ceaf4c counterGroup:{ name:null counters:{} } }} channels:{MemChannel=org.apache.flume.channel.MemoryChannel{name: MemChannel}} }
+14 Apr 2017 22:49:21,866 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:144)  - Starting Channel MemChannel
+14 Apr 2017 22:49:22,008 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: CHANNEL, name: MemChannel: Successfully registered new MBean.
+14 Apr 2017 22:49:22,009 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: CHANNEL, name: MemChannel started
+14 Apr 2017 22:49:22,015 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:171)  - Starting Sink HDFS
+14 Apr 2017 22:49:22,016 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:182)  - Starting Source Twitter
+14 Apr 2017 22:49:22,022 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: SINK, name: HDFS: Successfully registered new MBean.
+14 Apr 2017 22:49:22,022 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: SINK, name: HDFS started
+14 Apr 2017 22:49:22,054 INFO  [Twitter Stream consumer-1[initializing]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Establishing connection.
+14 Apr 2017 22:49:25,500 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - 404:The URI requested is invalid or the resource requested, such as a user, does not exist.
+Unknown URL. See Twitter Streaming API documentation at http://dev.twitter.com/pages/streaming_api
+
+14 Apr 2017 22:49:25,500 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Waiting for 10000 milliseconds
+14 Apr 2017 22:49:35,501 INFO  [Twitter Stream consumer-1[Waiting for 10000 milliseconds]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Establishing connection.
+14 Apr 2017 22:49:35,980 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - 404:The URI requested is invalid or the resource requested, such as a user, does not exist.
+Unknown URL. See Twitter Streaming API documentation at http://dev.twitter.com/pages/streaming_api
+
+14 Apr 2017 22:49:35,981 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Waiting for 20000 milliseconds
+14 Apr 2017 22:49:55,982 INFO  [Twitter Stream consumer-1[Waiting for 20000 milliseconds]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Establishing connection.
+14 Apr 2017 22:49:56,555 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - 404:The URI requested is invalid or the resource requested, such as a user, does not exist.
+Unknown URL. See Twitter Streaming API documentation at http://dev.twitter.com/pages/streaming_api
+
+14 Apr 2017 22:49:56,556 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Waiting for 40000 milliseconds
+14 Apr 2017 22:50:36,558 INFO  [Twitter Stream consumer-1[Waiting for 40000 milliseconds]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Establishing connection.
+14 Apr 2017 22:50:37,045 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - 404:The URI requested is invalid or the resource requested, such as a user, does not exist.
+Unknown URL. See Twitter Streaming API documentation at http://dev.twitter.com/pages/streaming_api
+
+14 Apr 2017 22:50:37,045 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Waiting for 80000 milliseconds
+14 Apr 2017 22:50:40,411 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.stop:78)  - Stopping lifecycle supervisor 10
+14 Apr 2017 22:50:40,419 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: SINK, name: HDFS stopped
+14 Apr 2017 22:50:40,420 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: SINK, name: HDFS. sink.start.time == 1492224562022
+14 Apr 2017 22:50:40,430 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: SINK, name: HDFS. sink.stop.time == 1492224640419
+14 Apr 2017 22:50:40,430 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.batch.complete == 0
+14 Apr 2017 22:50:40,430 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.batch.empty == 12
+14 Apr 2017 22:50:40,430 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.batch.underflow == 0
+14 Apr 2017 22:50:40,430 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.connection.closed.count == 0
+14 Apr 2017 22:50:40,430 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.connection.creation.count == 0
+14 Apr 2017 22:50:40,431 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.connection.failed.count == 0
+14 Apr 2017 22:50:40,431 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.event.drain.attempt == 0
+14 Apr 2017 22:50:40,431 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.event.drain.sucess == 0
+14 Apr 2017 22:50:40,431 INFO  [agent-shutdown-hook] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider.stop:84)  - Configuration provider stopping
+14 Apr 2017 22:50:40,439 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: CHANNEL, name: MemChannel stopped
+14 Apr 2017 22:50:40,440 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.start.time == 1492224562009
+14 Apr 2017 22:50:40,440 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.stop.time == 1492224640439
+14 Apr 2017 22:50:40,440 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.capacity == 10000
+14 Apr 2017 22:50:40,440 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.current.size == 0
+14 Apr 2017 22:50:40,441 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.put.attempt == 0
+14 Apr 2017 22:50:40,441 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.put.success == 0
+14 Apr 2017 22:50:40,441 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.take.attempt == 12
+14 Apr 2017 22:50:40,441 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.take.success == 0
+14 Apr 2017 23:34:06,173 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider.start:62)  - Configuration provider starting
+14 Apr 2017 23:34:06,218 INFO  [conf-file-poller-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider$FileWatcherRunnable.run:134)  - Reloading configuration file:conf/flume-twitter.conf
+14 Apr 2017 23:34:06,273 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 23:34:06,275 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 23:34:06,280 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 23:34:06,288 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:930)  - Added sinks: HDFS Agent: TwitterAgent
+14 Apr 2017 23:34:06,288 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 23:34:06,289 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 23:34:06,289 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 23:34:06,289 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 23:34:06,289 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+14 Apr 2017 23:34:06,358 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration.validateConfiguration:140)  - Post-validation flume configuration contains configuration for agents: [TwitterAgent]
+14 Apr 2017 23:34:06,358 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:147)  - Creating channels
+14 Apr 2017 23:34:06,403 INFO  [conf-file-poller-0] (org.apache.flume.channel.DefaultChannelFactory.create:42)  - Creating instance of channel MemChannel type memory
+14 Apr 2017 23:34:06,434 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:201)  - Created channel MemChannel
+14 Apr 2017 23:34:06,435 INFO  [conf-file-poller-0] (org.apache.flume.source.DefaultSourceFactory.create:41)  - Creating instance of source Twitter, type com.cloudera.flume.source.TwitterSource
+14 Apr 2017 23:34:06,854 INFO  [conf-file-poller-0] (org.apache.flume.sink.DefaultSinkFactory.create:42)  - Creating instance of sink: HDFS, type: hdfs
+14 Apr 2017 23:34:06,904 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.getConfiguration:116)  - Channel MemChannel connected to [Twitter, HDFS]
+14 Apr 2017 23:34:06,921 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:137)  - Starting new configuration:{ sourceRunners:{Twitter=EventDrivenSourceRunner: { source:com.cloudera.flume.source.TwitterSource{name:Twitter,state:IDLE} }} sinkRunners:{HDFS=SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@1cd6758a counterGroup:{ name:null counters:{} } }} channels:{MemChannel=org.apache.flume.channel.MemoryChannel{name: MemChannel}} }
+14 Apr 2017 23:34:06,942 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:144)  - Starting Channel MemChannel
+14 Apr 2017 23:34:07,145 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: CHANNEL, name: MemChannel: Successfully registered new MBean.
+14 Apr 2017 23:34:07,146 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: CHANNEL, name: MemChannel started
+14 Apr 2017 23:34:07,146 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:171)  - Starting Sink HDFS
+14 Apr 2017 23:34:07,146 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:182)  - Starting Source Twitter
+14 Apr 2017 23:34:07,158 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: SINK, name: HDFS: Successfully registered new MBean.
+14 Apr 2017 23:34:07,158 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: SINK, name: HDFS started
+14 Apr 2017 23:34:07,189 INFO  [Twitter Stream consumer-1[initializing]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Establishing connection.
+14 Apr 2017 23:34:07,218 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - no protocol: statuses/filter.json
+14 Apr 2017 23:34:07,218 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Waiting for 250 milliseconds
+14 Apr 2017 23:34:07,469 INFO  [Twitter Stream consumer-1[Waiting for 250 milliseconds]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Establishing connection.
+14 Apr 2017 23:34:07,469 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - no protocol: statuses/filter.json
+14 Apr 2017 23:34:07,469 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Waiting for 500 milliseconds
+14 Apr 2017 23:34:07,970 INFO  [Twitter Stream consumer-1[Waiting for 500 milliseconds]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Establishing connection.
+14 Apr 2017 23:34:07,971 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - no protocol: statuses/filter.json
+14 Apr 2017 23:34:07,971 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Waiting for 1000 milliseconds
+14 Apr 2017 23:34:08,971 INFO  [Twitter Stream consumer-1[Waiting for 1000 milliseconds]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Establishing connection.
+14 Apr 2017 23:34:08,972 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - no protocol: statuses/filter.json
+14 Apr 2017 23:34:08,972 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Waiting for 2000 milliseconds
+14 Apr 2017 23:34:10,973 INFO  [Twitter Stream consumer-1[Waiting for 2000 milliseconds]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Establishing connection.
+14 Apr 2017 23:34:10,973 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - no protocol: statuses/filter.json
+14 Apr 2017 23:34:10,974 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Waiting for 4000 milliseconds
+14 Apr 2017 23:34:14,974 INFO  [Twitter Stream consumer-1[Waiting for 4000 milliseconds]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Establishing connection.
+14 Apr 2017 23:34:14,975 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - no protocol: statuses/filter.json
+14 Apr 2017 23:34:14,975 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Waiting for 8000 milliseconds
+14 Apr 2017 23:34:22,976 INFO  [Twitter Stream consumer-1[Waiting for 8000 milliseconds]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Establishing connection.
+14 Apr 2017 23:34:22,977 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - no protocol: statuses/filter.json
+14 Apr 2017 23:34:22,977 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Waiting for 16000 milliseconds
+14 Apr 2017 23:34:38,978 INFO  [Twitter Stream consumer-1[Waiting for 16000 milliseconds]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Establishing connection.
+14 Apr 2017 23:34:38,979 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - no protocol: statuses/filter.json
+14 Apr 2017 23:34:38,979 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.internal.logging.SLF4JLogger.info:83)  - Waiting for 16000 milliseconds
+14 Apr 2017 23:34:52,606 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.stop:78)  - Stopping lifecycle supervisor 10
+14 Apr 2017 23:34:52,610 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: SINK, name: HDFS stopped
+14 Apr 2017 23:34:52,611 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: SINK, name: HDFS. sink.start.time == 1492227247158
+14 Apr 2017 23:34:52,611 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: SINK, name: HDFS. sink.stop.time == 1492227292610
+14 Apr 2017 23:34:52,612 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.batch.complete == 0
+14 Apr 2017 23:34:52,612 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.batch.empty == 7
+14 Apr 2017 23:34:52,625 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.batch.underflow == 0
+14 Apr 2017 23:34:52,626 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.connection.closed.count == 0
+14 Apr 2017 23:34:52,626 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.connection.creation.count == 0
+14 Apr 2017 23:34:52,626 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.connection.failed.count == 0
+14 Apr 2017 23:34:52,627 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.event.drain.attempt == 0
+14 Apr 2017 23:34:52,627 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.event.drain.sucess == 0
+14 Apr 2017 23:34:52,628 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: CHANNEL, name: MemChannel stopped
+14 Apr 2017 23:34:52,628 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.start.time == 1492227247146
+14 Apr 2017 23:34:52,628 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.stop.time == 1492227292628
+14 Apr 2017 23:34:52,628 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.capacity == 10000
+14 Apr 2017 23:34:52,629 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.current.size == 0
+14 Apr 2017 23:34:52,629 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.put.attempt == 0
+14 Apr 2017 23:34:52,629 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.put.success == 0
+14 Apr 2017 23:34:52,629 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.take.attempt == 7
+14 Apr 2017 23:34:52,629 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.take.success == 0
+14 Apr 2017 23:34:52,629 INFO  [agent-shutdown-hook] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider.stop:84)  - Configuration provider stopping
+15 Apr 2017 20:15:18,916 ERROR [main] (org.apache.flume.node.Application.main:348)  - A fatal error occurred while running. Exception follows.
+org.apache.commons.cli.ParseException: The specified configuration file does not exist: /home/tushar/apache-flume-1.7.0-bin/conf/twitter.conf
+	at org.apache.flume.node.Application.main(Application.java:316)
+15 Apr 2017 20:17:46,808 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider.start:62)  - Configuration provider starting
+15 Apr 2017 20:17:46,815 INFO  [conf-file-poller-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider$FileWatcherRunnable.run:134)  - Reloading configuration file:conf/flume-twitter.conf
+15 Apr 2017 20:17:46,824 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 20:17:46,825 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 20:17:46,825 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 20:17:46,825 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:930)  - Added sinks: HDFS Agent: TwitterAgent
+15 Apr 2017 20:17:46,826 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 20:17:46,826 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 20:17:46,826 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 20:17:46,826 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 20:17:46,826 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 20:17:46,856 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration.validateConfiguration:140)  - Post-validation flume configuration contains configuration for agents: [TwitterAgent]
+15 Apr 2017 20:17:46,857 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:147)  - Creating channels
+15 Apr 2017 20:17:46,871 INFO  [conf-file-poller-0] (org.apache.flume.channel.DefaultChannelFactory.create:42)  - Creating instance of channel MemChannel type memory
+15 Apr 2017 20:17:46,888 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:201)  - Created channel MemChannel
+15 Apr 2017 20:17:46,889 INFO  [conf-file-poller-0] (org.apache.flume.source.DefaultSourceFactory.create:41)  - Creating instance of source Twitter, type com.cloudera.flume.source.TwitterSource
+15 Apr 2017 20:17:47,086 INFO  [conf-file-poller-0] (org.apache.flume.sink.DefaultSinkFactory.create:42)  - Creating instance of sink: HDFS, type: hdfs
+15 Apr 2017 20:17:47,100 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.getConfiguration:116)  - Channel MemChannel connected to [Twitter, HDFS]
+15 Apr 2017 20:17:47,131 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:137)  - Starting new configuration:{ sourceRunners:{Twitter=EventDrivenSourceRunner: { source:com.cloudera.flume.source.TwitterSource{name:Twitter,state:IDLE} }} sinkRunners:{HDFS=SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@4136b690 counterGroup:{ name:null counters:{} } }} channels:{MemChannel=org.apache.flume.channel.MemoryChannel{name: MemChannel}} }
+15 Apr 2017 20:17:47,154 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:144)  - Starting Channel MemChannel
+15 Apr 2017 20:17:47,212 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: CHANNEL, name: MemChannel: Successfully registered new MBean.
+15 Apr 2017 20:17:47,212 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: CHANNEL, name: MemChannel started
+15 Apr 2017 20:17:47,213 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:171)  - Starting Sink HDFS
+15 Apr 2017 20:17:47,213 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:182)  - Starting Source Twitter
+15 Apr 2017 20:17:47,219 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: SINK, name: HDFS: Successfully registered new MBean.
+15 Apr 2017 20:17:47,220 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: SINK, name: HDFS started
+15 Apr 2017 20:17:47,224 INFO  [Twitter Stream consumer-1[initializing]] (twitter4j.SLF4JLogger.info:62)  - Establishing connection.
+15 Apr 2017 20:18:19,099 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.SLF4JLogger.info:62)  - Connection established.
+15 Apr 2017 20:18:19,099 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.SLF4JLogger.info:62)  - Receiving status stream.
+15 Apr 2017 20:18:35,173 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:18:35,602 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492301915174.tmp
+15 Apr 2017 20:18:42,427 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:18:42,427 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492301915174.tmp
+15 Apr 2017 20:18:42,516 INFO  [hdfs-HDFS-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492301915174.tmp to hdfs://localhost:54310/movie/FlumeData.1492301915174
+15 Apr 2017 20:18:42,585 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492301915175.tmp
+15 Apr 2017 20:19:08,267 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:19:08,267 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492301915175.tmp
+15 Apr 2017 20:19:08,335 INFO  [hdfs-HDFS-call-runner-9] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492301915175.tmp to hdfs://localhost:54310/movie/FlumeData.1492301915175
+15 Apr 2017 20:19:08,417 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492301915176.tmp
+15 Apr 2017 20:19:38,525 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492301915176.tmp
+15 Apr 2017 20:19:38,596 INFO  [hdfs-HDFS-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492301915176.tmp to hdfs://localhost:54310/movie/FlumeData.1492301915176
+15 Apr 2017 20:19:38,616 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:20:39,718 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:20:39,747 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302039719.tmp
+15 Apr 2017 20:20:43,142 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:20:43,142 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302039719.tmp
+15 Apr 2017 20:20:43,157 INFO  [hdfs-HDFS-call-runner-9] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302039719.tmp to hdfs://localhost:54310/movie/FlumeData.1492302039719
+15 Apr 2017 20:20:43,227 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302039720.tmp
+15 Apr 2017 20:21:01,271 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:21:01,271 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302039720.tmp
+15 Apr 2017 20:21:01,334 INFO  [hdfs-HDFS-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302039720.tmp to hdfs://localhost:54310/movie/FlumeData.1492302039720
+15 Apr 2017 20:21:01,368 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302039721.tmp
+15 Apr 2017 20:21:31,399 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302039721.tmp
+15 Apr 2017 20:21:31,500 INFO  [hdfs-HDFS-call-runner-9] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302039721.tmp to hdfs://localhost:54310/movie/FlumeData.1492302039721
+15 Apr 2017 20:21:31,520 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:21:58,456 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:21:58,494 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302118457.tmp
+15 Apr 2017 20:22:28,725 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302118457.tmp
+15 Apr 2017 20:22:28,747 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302118457.tmp to hdfs://localhost:54310/movie/FlumeData.1492302118457
+15 Apr 2017 20:22:28,752 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:22:31,778 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:22:31,816 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302151779.tmp
+15 Apr 2017 20:23:01,872 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302151779.tmp
+15 Apr 2017 20:23:01,887 INFO  [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302151779.tmp to hdfs://localhost:54310/movie/FlumeData.1492302151779
+15 Apr 2017 20:23:01,893 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:23:05,328 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:23:05,379 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302185329.tmp
+15 Apr 2017 20:23:23,649 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:23:23,650 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302185329.tmp
+15 Apr 2017 20:23:23,716 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302185329.tmp to hdfs://localhost:54310/movie/FlumeData.1492302185329
+15 Apr 2017 20:23:23,761 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302185330.tmp
+15 Apr 2017 20:23:32,505 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:23:32,505 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302185330.tmp
+15 Apr 2017 20:23:32,588 INFO  [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302185330.tmp to hdfs://localhost:54310/movie/FlumeData.1492302185330
+15 Apr 2017 20:23:32,639 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302185331.tmp
+15 Apr 2017 20:23:36,987 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:23:36,988 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302185331.tmp
+15 Apr 2017 20:23:37,044 INFO  [hdfs-HDFS-call-runner-7] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302185331.tmp to hdfs://localhost:54310/movie/FlumeData.1492302185331
+15 Apr 2017 20:23:37,154 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302185332.tmp
+15 Apr 2017 20:24:07,274 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302185332.tmp
+15 Apr 2017 20:24:07,290 INFO  [hdfs-HDFS-call-runner-2] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302185332.tmp to hdfs://localhost:54310/movie/FlumeData.1492302185332
+15 Apr 2017 20:24:07,297 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:24:34,291 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:24:34,322 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302274292.tmp
+15 Apr 2017 20:24:54,292 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:24:54,292 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302274292.tmp
+15 Apr 2017 20:24:54,319 INFO  [hdfs-HDFS-call-runner-8] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302274292.tmp to hdfs://localhost:54310/movie/FlumeData.1492302274292
+15 Apr 2017 20:24:54,404 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302274293.tmp
+15 Apr 2017 20:24:57,722 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:24:57,722 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302274293.tmp
+15 Apr 2017 20:24:57,743 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302274293.tmp to hdfs://localhost:54310/movie/FlumeData.1492302274293
+15 Apr 2017 20:24:57,856 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302274294.tmp
+15 Apr 2017 20:25:09,968 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:25:09,973 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302274294.tmp
+15 Apr 2017 20:25:10,078 INFO  [hdfs-HDFS-call-runner-8] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302274294.tmp to hdfs://localhost:54310/movie/FlumeData.1492302274294
+15 Apr 2017 20:25:10,126 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302274295.tmp
+15 Apr 2017 20:25:14,804 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:25:14,805 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302274295.tmp
+15 Apr 2017 20:25:14,819 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302274295.tmp to hdfs://localhost:54310/movie/FlumeData.1492302274295
+15 Apr 2017 20:25:14,845 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302274296.tmp
+15 Apr 2017 20:25:44,869 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302274296.tmp
+15 Apr 2017 20:25:44,950 INFO  [hdfs-HDFS-call-runner-8] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302274296.tmp to hdfs://localhost:54310/movie/FlumeData.1492302274296
+15 Apr 2017 20:25:44,972 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:25:47,958 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:25:47,992 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302347959.tmp
+15 Apr 2017 20:26:14,510 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:26:14,510 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302347959.tmp
+15 Apr 2017 20:26:14,593 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302347959.tmp to hdfs://localhost:54310/movie/FlumeData.1492302347959
+15 Apr 2017 20:26:14,636 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302347960.tmp
+15 Apr 2017 20:26:37,546 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:26:37,547 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302347960.tmp
+15 Apr 2017 20:26:37,613 INFO  [hdfs-HDFS-call-runner-6] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302347960.tmp to hdfs://localhost:54310/movie/FlumeData.1492302347960
+15 Apr 2017 20:26:37,640 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302347961.tmp
+15 Apr 2017 20:27:04,352 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:27:04,352 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302347961.tmp
+15 Apr 2017 20:27:04,431 INFO  [hdfs-HDFS-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302347961.tmp to hdfs://localhost:54310/movie/FlumeData.1492302347961
+15 Apr 2017 20:27:04,487 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302347962.tmp
+15 Apr 2017 20:27:10,532 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:27:10,532 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302347962.tmp
+15 Apr 2017 20:27:10,544 INFO  [hdfs-HDFS-call-runner-9] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302347962.tmp to hdfs://localhost:54310/movie/FlumeData.1492302347962
+15 Apr 2017 20:27:10,585 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302347963.tmp
+15 Apr 2017 20:27:35,634 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:27:35,635 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302347963.tmp
+15 Apr 2017 20:27:35,657 INFO  [hdfs-HDFS-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302347963.tmp to hdfs://localhost:54310/movie/FlumeData.1492302347963
+15 Apr 2017 20:27:35,703 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302347964.tmp
+15 Apr 2017 20:27:53,820 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:27:53,820 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302347964.tmp
+15 Apr 2017 20:27:53,842 INFO  [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302347964.tmp to hdfs://localhost:54310/movie/FlumeData.1492302347964
+15 Apr 2017 20:27:53,874 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302347965.tmp
+15 Apr 2017 20:28:18,982 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:28:18,983 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302347965.tmp
+15 Apr 2017 20:28:19,012 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302347965.tmp to hdfs://localhost:54310/movie/FlumeData.1492302347965
+15 Apr 2017 20:28:19,072 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302347966.tmp
+15 Apr 2017 20:28:23,343 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:28:23,343 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302347966.tmp
+15 Apr 2017 20:28:23,354 INFO  [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302347966.tmp to hdfs://localhost:54310/movie/FlumeData.1492302347966
+15 Apr 2017 20:28:23,378 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302347967.tmp
+15 Apr 2017 20:28:38,239 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:28:38,239 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302347967.tmp
+15 Apr 2017 20:28:38,262 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302347967.tmp to hdfs://localhost:54310/movie/FlumeData.1492302347967
+15 Apr 2017 20:28:38,298 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302347968.tmp
+15 Apr 2017 20:29:05,359 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:29:05,360 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302347968.tmp
+15 Apr 2017 20:29:05,421 INFO  [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302347968.tmp to hdfs://localhost:54310/movie/FlumeData.1492302347968
+15 Apr 2017 20:29:05,453 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302347969.tmp
+15 Apr 2017 20:29:35,502 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302347969.tmp
+15 Apr 2017 20:29:35,547 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302347969.tmp to hdfs://localhost:54310/movie/FlumeData.1492302347969
+15 Apr 2017 20:29:35,567 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:29:46,545 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:29:46,578 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302586546.tmp
+15 Apr 2017 20:30:16,674 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302586546.tmp
+15 Apr 2017 20:30:16,750 INFO  [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302586546.tmp to hdfs://localhost:54310/movie/FlumeData.1492302586546
+15 Apr 2017 20:30:16,756 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:30:46,468 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:30:46,483 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302646469.tmp
+15 Apr 2017 20:31:16,510 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302646469.tmp
+15 Apr 2017 20:31:16,585 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302646469.tmp to hdfs://localhost:54310/movie/FlumeData.1492302646469
+15 Apr 2017 20:31:16,605 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:31:20,112 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:31:20,146 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302680113.tmp
+15 Apr 2017 20:31:50,192 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302680113.tmp
+15 Apr 2017 20:31:50,287 INFO  [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302680113.tmp to hdfs://localhost:54310/movie/FlumeData.1492302680113
+15 Apr 2017 20:31:50,292 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:31:53,213 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:31:53,267 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302713213.tmp
+15 Apr 2017 20:32:11,350 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:32:11,350 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302713213.tmp
+15 Apr 2017 20:32:11,424 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302713213.tmp to hdfs://localhost:54310/movie/FlumeData.1492302713213
+15 Apr 2017 20:32:11,459 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302713214.tmp
+15 Apr 2017 20:32:39,983 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:32:39,983 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302713214.tmp
+15 Apr 2017 20:32:40,113 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302713214.tmp to hdfs://localhost:54310/movie/FlumeData.1492302713214
+15 Apr 2017 20:32:40,163 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302713215.tmp
+15 Apr 2017 20:33:10,207 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302713215.tmp
+15 Apr 2017 20:33:10,215 INFO  [hdfs-HDFS-call-runner-7] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302713215.tmp to hdfs://localhost:54310/movie/FlumeData.1492302713215
+15 Apr 2017 20:33:10,234 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:33:14,151 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:33:14,191 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302794152.tmp
+15 Apr 2017 20:33:41,931 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:33:41,932 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302794152.tmp
+15 Apr 2017 20:33:41,946 INFO  [hdfs-HDFS-call-runner-2] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302794152.tmp to hdfs://localhost:54310/movie/FlumeData.1492302794152
+15 Apr 2017 20:33:41,987 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302794153.tmp
+15 Apr 2017 20:34:12,032 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302794153.tmp
+15 Apr 2017 20:34:12,139 INFO  [hdfs-HDFS-call-runner-6] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302794153.tmp to hdfs://localhost:54310/movie/FlumeData.1492302794153
+15 Apr 2017 20:34:12,144 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:34:31,647 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:34:31,659 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302871648.tmp
+15 Apr 2017 20:35:01,683 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302871648.tmp
+15 Apr 2017 20:35:01,721 INFO  [hdfs-HDFS-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302871648.tmp to hdfs://localhost:54310/movie/FlumeData.1492302871648
+15 Apr 2017 20:35:01,727 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:35:14,480 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:35:14,495 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302914481.tmp
+15 Apr 2017 20:35:21,675 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:35:21,675 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302914481.tmp
+15 Apr 2017 20:35:21,756 INFO  [hdfs-HDFS-call-runner-9] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302914481.tmp to hdfs://localhost:54310/movie/FlumeData.1492302914481
+15 Apr 2017 20:35:21,816 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302914482.tmp
+15 Apr 2017 20:35:51,869 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302914482.tmp
+15 Apr 2017 20:35:51,939 INFO  [hdfs-HDFS-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302914482.tmp to hdfs://localhost:54310/movie/FlumeData.1492302914482
+15 Apr 2017 20:35:51,959 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:36:28,793 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:36:28,806 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302988794.tmp
+15 Apr 2017 20:36:56,042 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:36:56,042 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302988794.tmp
+15 Apr 2017 20:36:56,072 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302988794.tmp to hdfs://localhost:54310/movie/FlumeData.1492302988794
+15 Apr 2017 20:36:56,094 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302988795.tmp
+15 Apr 2017 20:37:08,145 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:37:08,145 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302988795.tmp
+15 Apr 2017 20:37:08,156 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302988795.tmp to hdfs://localhost:54310/movie/FlumeData.1492302988795
+15 Apr 2017 20:37:08,186 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492302988796.tmp
+15 Apr 2017 20:37:38,211 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492302988796.tmp
+15 Apr 2017 20:37:38,278 INFO  [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492302988796.tmp to hdfs://localhost:54310/movie/FlumeData.1492302988796
+15 Apr 2017 20:37:38,298 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:37:41,258 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:37:41,277 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303061259.tmp
+15 Apr 2017 20:38:11,368 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303061259.tmp
+15 Apr 2017 20:38:11,383 INFO  [hdfs-HDFS-call-runner-7] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303061259.tmp to hdfs://localhost:54310/movie/FlumeData.1492303061259
+15 Apr 2017 20:38:11,387 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:38:41,171 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:38:41,183 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303121172.tmp
+15 Apr 2017 20:38:52,383 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:38:52,383 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303121172.tmp
+15 Apr 2017 20:38:52,417 INFO  [hdfs-HDFS-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303121172.tmp to hdfs://localhost:54310/movie/FlumeData.1492303121172
+15 Apr 2017 20:38:52,438 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303121173.tmp
+15 Apr 2017 20:39:22,458 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303121173.tmp
+15 Apr 2017 20:39:22,484 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303121173.tmp to hdfs://localhost:54310/movie/FlumeData.1492303121173
+15 Apr 2017 20:39:22,491 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:39:25,992 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:39:26,018 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303165993.tmp
+15 Apr 2017 20:39:34,649 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:39:34,650 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303165993.tmp
+15 Apr 2017 20:39:34,726 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303165993.tmp to hdfs://localhost:54310/movie/FlumeData.1492303165993
+15 Apr 2017 20:39:34,762 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303165994.tmp
+15 Apr 2017 20:40:04,785 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303165994.tmp
+15 Apr 2017 20:40:05,216 INFO  [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303165994.tmp to hdfs://localhost:54310/movie/FlumeData.1492303165994
+15 Apr 2017 20:40:05,223 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:40:09,309 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:40:09,356 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303209309.tmp
+15 Apr 2017 20:40:39,387 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303209309.tmp
+15 Apr 2017 20:40:39,403 INFO  [hdfs-HDFS-call-runner-8] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303209309.tmp to hdfs://localhost:54310/movie/FlumeData.1492303209309
+15 Apr 2017 20:40:39,405 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:41:14,407 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:41:14,419 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303274408.tmp
+15 Apr 2017 20:41:25,172 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:41:25,172 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303274408.tmp
+15 Apr 2017 20:41:25,180 INFO  [hdfs-HDFS-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303274408.tmp to hdfs://localhost:54310/movie/FlumeData.1492303274408
+15 Apr 2017 20:41:25,196 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303274409.tmp
+15 Apr 2017 20:41:45,777 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:41:45,778 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303274409.tmp
+15 Apr 2017 20:41:45,786 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303274409.tmp to hdfs://localhost:54310/movie/FlumeData.1492303274409
+15 Apr 2017 20:41:45,804 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303274410.tmp
+15 Apr 2017 20:41:55,836 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:41:55,836 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303274410.tmp
+15 Apr 2017 20:41:55,854 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303274410.tmp to hdfs://localhost:54310/movie/FlumeData.1492303274410
+15 Apr 2017 20:41:55,873 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303274411.tmp
+15 Apr 2017 20:42:25,892 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303274411.tmp
+15 Apr 2017 20:42:25,942 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303274411.tmp to hdfs://localhost:54310/movie/FlumeData.1492303274411
+15 Apr 2017 20:42:25,949 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:42:36,959 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:42:37,095 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303356960.tmp
+15 Apr 2017 20:42:49,134 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:42:49,134 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303356960.tmp
+15 Apr 2017 20:42:49,200 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303356960.tmp to hdfs://localhost:54310/movie/FlumeData.1492303356960
+15 Apr 2017 20:42:49,219 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303356961.tmp
+15 Apr 2017 20:42:53,701 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:42:53,702 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303356961.tmp
+15 Apr 2017 20:42:53,784 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303356961.tmp to hdfs://localhost:54310/movie/FlumeData.1492303356961
+15 Apr 2017 20:42:53,830 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303356962.tmp
+15 Apr 2017 20:43:06,185 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:43:06,185 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303356962.tmp
+15 Apr 2017 20:43:06,215 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303356962.tmp to hdfs://localhost:54310/movie/FlumeData.1492303356962
+15 Apr 2017 20:43:06,232 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303356963.tmp
+15 Apr 2017 20:43:36,259 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303356963.tmp
+15 Apr 2017 20:43:36,271 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303356963.tmp to hdfs://localhost:54310/movie/FlumeData.1492303356963
+15 Apr 2017 20:43:36,276 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:44:11,289 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:44:11,316 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303451290.tmp
+15 Apr 2017 20:44:19,471 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:44:19,472 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303451290.tmp
+15 Apr 2017 20:44:19,484 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303451290.tmp to hdfs://localhost:54310/movie/FlumeData.1492303451290
+15 Apr 2017 20:44:19,531 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303451291.tmp
+15 Apr 2017 20:44:49,570 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303451291.tmp
+15 Apr 2017 20:44:49,642 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303451291.tmp to hdfs://localhost:54310/movie/FlumeData.1492303451291
+15 Apr 2017 20:44:49,647 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:45:16,663 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:45:16,679 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303516664.tmp
+15 Apr 2017 20:45:19,829 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:45:19,829 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303516664.tmp
+15 Apr 2017 20:45:19,839 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303516664.tmp to hdfs://localhost:54310/movie/FlumeData.1492303516664
+15 Apr 2017 20:45:19,898 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303516665.tmp
+15 Apr 2017 20:45:49,935 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303516665.tmp
+15 Apr 2017 20:45:49,964 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303516665.tmp to hdfs://localhost:54310/movie/FlumeData.1492303516665
+15 Apr 2017 20:45:49,969 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:46:16,968 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:46:16,984 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303576969.tmp
+15 Apr 2017 20:46:47,064 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303576969.tmp
+15 Apr 2017 20:46:47,164 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303576969.tmp to hdfs://localhost:54310/movie/FlumeData.1492303576969
+15 Apr 2017 20:46:47,182 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:46:50,106 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:46:50,142 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303610107.tmp
+15 Apr 2017 20:47:20,244 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303610107.tmp
+15 Apr 2017 20:47:20,674 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303610107.tmp to hdfs://localhost:54310/movie/FlumeData.1492303610107
+15 Apr 2017 20:47:20,693 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:47:23,286 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:47:23,332 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303643287.tmp
+15 Apr 2017 20:47:49,878 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:47:49,878 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303643287.tmp
+15 Apr 2017 20:47:49,913 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303643287.tmp to hdfs://localhost:54310/movie/FlumeData.1492303643287
+15 Apr 2017 20:47:49,990 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303643288.tmp
+15 Apr 2017 20:48:20,080 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303643288.tmp
+15 Apr 2017 20:48:20,094 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303643288.tmp to hdfs://localhost:54310/movie/FlumeData.1492303643288
+15 Apr 2017 20:48:20,099 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:48:47,121 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:48:47,137 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303727122.tmp
+15 Apr 2017 20:48:54,241 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:48:54,241 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303727122.tmp
+15 Apr 2017 20:48:54,329 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303727122.tmp to hdfs://localhost:54310/movie/FlumeData.1492303727122
+15 Apr 2017 20:48:54,384 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303727123.tmp
+15 Apr 2017 20:49:00,103 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:49:00,105 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303727123.tmp
+15 Apr 2017 20:49:00,179 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303727123.tmp to hdfs://localhost:54310/movie/FlumeData.1492303727123
+15 Apr 2017 20:49:00,236 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303727124.tmp
+15 Apr 2017 20:49:05,425 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:49:05,425 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303727124.tmp
+15 Apr 2017 20:49:05,448 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303727124.tmp to hdfs://localhost:54310/movie/FlumeData.1492303727124
+15 Apr 2017 20:49:05,490 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303727125.tmp
+15 Apr 2017 20:49:19,577 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:49:19,577 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303727125.tmp
+15 Apr 2017 20:49:19,677 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303727125.tmp to hdfs://localhost:54310/movie/FlumeData.1492303727125
+15 Apr 2017 20:49:19,738 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303727126.tmp
+15 Apr 2017 20:49:25,581 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:49:25,581 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303727126.tmp
+15 Apr 2017 20:49:25,628 INFO  [hdfs-HDFS-call-runner-8] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303727126.tmp to hdfs://localhost:54310/movie/FlumeData.1492303727126
+15 Apr 2017 20:49:25,651 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303727127.tmp
+15 Apr 2017 20:49:32,716 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:49:32,717 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303727127.tmp
+15 Apr 2017 20:49:32,736 INFO  [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303727127.tmp to hdfs://localhost:54310/movie/FlumeData.1492303727127
+15 Apr 2017 20:49:32,781 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303727128.tmp
+15 Apr 2017 20:49:59,396 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:49:59,396 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303727128.tmp
+15 Apr 2017 20:49:59,462 INFO  [hdfs-HDFS-call-runner-8] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303727128.tmp to hdfs://localhost:54310/movie/FlumeData.1492303727128
+15 Apr 2017 20:49:59,499 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303727129.tmp
+15 Apr 2017 20:50:29,523 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303727129.tmp
+15 Apr 2017 20:50:29,559 INFO  [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303727129.tmp to hdfs://localhost:54310/movie/FlumeData.1492303727129
+15 Apr 2017 20:50:29,580 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:51:06,314 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:51:06,373 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303866315.tmp
+15 Apr 2017 20:51:11,332 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:51:11,333 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303866315.tmp
+15 Apr 2017 20:51:11,356 INFO  [hdfs-HDFS-call-runner-8] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303866315.tmp to hdfs://localhost:54310/movie/FlumeData.1492303866315
+15 Apr 2017 20:51:11,378 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303866316.tmp
+15 Apr 2017 20:51:18,546 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:51:18,546 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303866316.tmp
+15 Apr 2017 20:51:18,975 INFO  [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303866316.tmp to hdfs://localhost:54310/movie/FlumeData.1492303866316
+15 Apr 2017 20:51:19,000 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303866317.tmp
+15 Apr 2017 20:51:37,758 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:51:37,759 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303866317.tmp
+15 Apr 2017 20:51:37,782 INFO  [hdfs-HDFS-call-runner-8] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303866317.tmp to hdfs://localhost:54310/movie/FlumeData.1492303866317
+15 Apr 2017 20:51:37,804 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303866318.tmp
+15 Apr 2017 20:51:55,895 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:51:55,895 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303866318.tmp
+15 Apr 2017 20:51:55,921 INFO  [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303866318.tmp to hdfs://localhost:54310/movie/FlumeData.1492303866318
+15 Apr 2017 20:51:55,985 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303866319.tmp
+15 Apr 2017 20:52:14,033 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:52:14,034 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303866319.tmp
+15 Apr 2017 20:52:14,105 INFO  [hdfs-HDFS-call-runner-8] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303866319.tmp to hdfs://localhost:54310/movie/FlumeData.1492303866319
+15 Apr 2017 20:52:14,142 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492303866320.tmp
+15 Apr 2017 20:52:44,180 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492303866320.tmp
+15 Apr 2017 20:52:44,189 INFO  [hdfs-HDFS-call-runner-2] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492303866320.tmp to hdfs://localhost:54310/movie/FlumeData.1492303866320
+15 Apr 2017 20:52:44,193 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:53:38,641 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:53:38,671 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304018642.tmp
+15 Apr 2017 20:54:08,850 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304018642.tmp
+15 Apr 2017 20:54:08,872 INFO  [hdfs-HDFS-call-runner-6] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304018642.tmp to hdfs://localhost:54310/movie/FlumeData.1492304018642
+15 Apr 2017 20:54:08,887 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:54:27,875 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:54:27,907 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304067876.tmp
+15 Apr 2017 20:54:53,007 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:54:53,008 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304067876.tmp
+15 Apr 2017 20:54:53,101 INFO  [hdfs-HDFS-call-runner-2] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304067876.tmp to hdfs://localhost:54310/movie/FlumeData.1492304067876
+15 Apr 2017 20:54:53,147 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304067877.tmp
+15 Apr 2017 20:55:23,189 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304067877.tmp
+15 Apr 2017 20:55:23,703 INFO  [hdfs-HDFS-call-runner-9] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304067877.tmp to hdfs://localhost:54310/movie/FlumeData.1492304067877
+15 Apr 2017 20:55:23,785 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:55:26,209 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:55:26,224 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304126210.tmp
+15 Apr 2017 20:55:45,892 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:55:45,892 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304126210.tmp
+15 Apr 2017 20:55:45,901 INFO  [hdfs-HDFS-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304126210.tmp to hdfs://localhost:54310/movie/FlumeData.1492304126210
+15 Apr 2017 20:55:45,919 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304126211.tmp
+15 Apr 2017 20:55:53,141 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:55:53,141 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304126211.tmp
+15 Apr 2017 20:55:53,179 INFO  [hdfs-HDFS-call-runner-9] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304126211.tmp to hdfs://localhost:54310/movie/FlumeData.1492304126211
+15 Apr 2017 20:55:53,198 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304126212.tmp
+15 Apr 2017 20:55:56,332 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:55:56,333 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304126212.tmp
+15 Apr 2017 20:55:56,365 INFO  [hdfs-HDFS-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304126212.tmp to hdfs://localhost:54310/movie/FlumeData.1492304126212
+15 Apr 2017 20:55:56,406 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304126213.tmp
+15 Apr 2017 20:56:09,092 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:56:09,092 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304126213.tmp
+15 Apr 2017 20:56:09,338 INFO  [hdfs-HDFS-call-runner-9] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304126213.tmp to hdfs://localhost:54310/movie/FlumeData.1492304126213
+15 Apr 2017 20:56:09,372 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304126214.tmp
+15 Apr 2017 20:56:39,400 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304126214.tmp
+15 Apr 2017 20:56:39,419 INFO  [hdfs-HDFS-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304126214.tmp to hdfs://localhost:54310/movie/FlumeData.1492304126214
+15 Apr 2017 20:56:39,439 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:56:59,363 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:56:59,382 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304219364.tmp
+15 Apr 2017 20:57:13,718 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:57:13,718 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304219364.tmp
+15 Apr 2017 20:57:13,747 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304219364.tmp to hdfs://localhost:54310/movie/FlumeData.1492304219364
+15 Apr 2017 20:57:13,789 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304219365.tmp
+15 Apr 2017 20:57:23,809 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:57:23,810 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304219365.tmp
+15 Apr 2017 20:57:23,823 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304219365.tmp to hdfs://localhost:54310/movie/FlumeData.1492304219365
+15 Apr 2017 20:57:23,855 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304219366.tmp
+15 Apr 2017 20:57:48,977 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:57:48,977 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304219366.tmp
+15 Apr 2017 20:57:49,027 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304219366.tmp to hdfs://localhost:54310/movie/FlumeData.1492304219366
+15 Apr 2017 20:57:49,048 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304219367.tmp
+15 Apr 2017 20:57:52,310 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 20:57:52,310 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304219367.tmp
+15 Apr 2017 20:57:52,324 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304219367.tmp to hdfs://localhost:54310/movie/FlumeData.1492304219367
+15 Apr 2017 20:57:52,397 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304219368.tmp
+15 Apr 2017 20:58:22,446 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304219368.tmp
+15 Apr 2017 20:58:22,492 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304219368.tmp to hdfs://localhost:54310/movie/FlumeData.1492304219368
+15 Apr 2017 20:58:22,512 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 20:58:49,524 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 20:58:49,542 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304329525.tmp
+15 Apr 2017 20:59:19,581 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304329525.tmp
+15 Apr 2017 20:59:19,661 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304329525.tmp to hdfs://localhost:54310/movie/FlumeData.1492304329525
+15 Apr 2017 20:59:19,664 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 21:00:10,611 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 21:00:10,645 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304410612.tmp
+15 Apr 2017 21:00:22,744 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:00:22,744 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304410612.tmp
+15 Apr 2017 21:00:22,789 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304410612.tmp to hdfs://localhost:54310/movie/FlumeData.1492304410612
+15 Apr 2017 21:00:22,815 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304410613.tmp
+15 Apr 2017 21:00:26,444 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:00:26,444 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304410613.tmp
+15 Apr 2017 21:00:26,454 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304410613.tmp to hdfs://localhost:54310/movie/FlumeData.1492304410613
+15 Apr 2017 21:00:26,475 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304410614.tmp
+15 Apr 2017 21:00:56,496 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304410614.tmp
+15 Apr 2017 21:00:56,544 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304410614.tmp to hdfs://localhost:54310/movie/FlumeData.1492304410614
+15 Apr 2017 21:00:56,548 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 21:01:18,071 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 21:01:18,116 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478072.tmp
+15 Apr 2017 21:01:43,251 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:01:43,252 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478072.tmp
+15 Apr 2017 21:01:43,326 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478072.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478072
+15 Apr 2017 21:01:43,382 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478073.tmp
+15 Apr 2017 21:01:55,633 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:01:55,634 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478073.tmp
+15 Apr 2017 21:01:55,690 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478073.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478073
+15 Apr 2017 21:01:55,705 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478074.tmp
+15 Apr 2017 21:01:59,798 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:01:59,798 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478074.tmp
+15 Apr 2017 21:01:59,819 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478074.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478074
+15 Apr 2017 21:01:59,855 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478075.tmp
+15 Apr 2017 21:02:18,190 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:02:18,190 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478075.tmp
+15 Apr 2017 21:02:18,198 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478075.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478075
+15 Apr 2017 21:02:18,215 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478076.tmp
+15 Apr 2017 21:02:43,373 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:02:43,373 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478076.tmp
+15 Apr 2017 21:02:43,461 INFO  [hdfs-HDFS-call-runner-8] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478076.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478076
+15 Apr 2017 21:02:43,478 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478077.tmp
+15 Apr 2017 21:02:53,136 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:02:53,136 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478077.tmp
+15 Apr 2017 21:02:53,173 INFO  [hdfs-HDFS-call-runner-3] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478077.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478077
+15 Apr 2017 21:02:53,226 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478078.tmp
+15 Apr 2017 21:03:06,150 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:03:06,150 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478078.tmp
+15 Apr 2017 21:03:06,199 INFO  [hdfs-HDFS-call-runner-8] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478078.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478078
+15 Apr 2017 21:03:06,235 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478079.tmp
+15 Apr 2017 21:03:31,538 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:03:31,538 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478079.tmp
+15 Apr 2017 21:03:31,548 INFO  [hdfs-HDFS-call-runner-3] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478079.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478079
+15 Apr 2017 21:03:31,564 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478080.tmp
+15 Apr 2017 21:03:49,646 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:03:49,647 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478080.tmp
+15 Apr 2017 21:03:49,777 INFO  [hdfs-HDFS-call-runner-8] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478080.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478080
+15 Apr 2017 21:03:49,791 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478081.tmp
+15 Apr 2017 21:03:58,889 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:03:58,889 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478081.tmp
+15 Apr 2017 21:03:58,909 INFO  [hdfs-HDFS-call-runner-3] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478081.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478081
+15 Apr 2017 21:03:58,923 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478082.tmp
+15 Apr 2017 21:04:23,978 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:04:23,979 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478082.tmp
+15 Apr 2017 21:04:24,050 INFO  [hdfs-HDFS-call-runner-8] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478082.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478082
+15 Apr 2017 21:04:24,083 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478083.tmp
+15 Apr 2017 21:04:49,173 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:04:49,173 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478083.tmp
+15 Apr 2017 21:04:49,274 INFO  [hdfs-HDFS-call-runner-3] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478083.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478083
+15 Apr 2017 21:04:49,290 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478084.tmp
+15 Apr 2017 21:05:16,778 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:05:16,779 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478084.tmp
+15 Apr 2017 21:05:16,798 INFO  [hdfs-HDFS-call-runner-8] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478084.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478084
+15 Apr 2017 21:05:16,860 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478085.tmp
+15 Apr 2017 21:05:21,163 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:05:21,163 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478085.tmp
+15 Apr 2017 21:05:21,187 INFO  [hdfs-HDFS-call-runner-3] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478085.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478085
+15 Apr 2017 21:05:21,203 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478086.tmp
+15 Apr 2017 21:05:46,253 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:05:46,253 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478086.tmp
+15 Apr 2017 21:05:46,263 INFO  [hdfs-HDFS-call-runner-8] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478086.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478086
+15 Apr 2017 21:05:46,281 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478087.tmp
+15 Apr 2017 21:06:04,321 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:06:04,321 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478087.tmp
+15 Apr 2017 21:06:04,388 INFO  [hdfs-HDFS-call-runner-3] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/movie/FlumeData.1492304478087.tmp to hdfs://localhost:54310/movie/FlumeData.1492304478087
+15 Apr 2017 21:06:04,428 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/movie//FlumeData.1492304478088.tmp
+15 Apr 2017 21:06:05,654 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.stop:78)  - Stopping lifecycle supervisor 10
+15 Apr 2017 21:06:05,659 ERROR [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSEventSink.process:447)  - process failed
+java.lang.InterruptedException: Timed out before HDFS call was made. Your hdfs.callTimeout might be set too low or HDFS calls are taking too long.
+	at org.apache.flume.sink.hdfs.BucketWriter.checkAndThrowInterruptedException(BucketWriter.java:649)
+	at org.apache.flume.sink.hdfs.BucketWriter.flush(BucketWriter.java:409)
+	at org.apache.flume.sink.hdfs.HDFSEventSink.process(HDFSEventSink.java:430)
+	at org.apache.flume.sink.DefaultSinkProcessor.process(DefaultSinkProcessor.java:67)
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145)
+	at java.lang.Thread.run(Thread.java:745)
+15 Apr 2017 21:06:05,660 ERROR [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.SinkRunner$PollingRunner.run:158)  - Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: java.lang.InterruptedException: Timed out before HDFS call was made. Your hdfs.callTimeout might be set too low or HDFS calls are taking too long.
+	at org.apache.flume.sink.hdfs.HDFSEventSink.process(HDFSEventSink.java:451)
+	at org.apache.flume.sink.DefaultSinkProcessor.process(DefaultSinkProcessor.java:67)
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: Timed out before HDFS call was made. Your hdfs.callTimeout might be set too low or HDFS calls are taking too long.
+	at org.apache.flume.sink.hdfs.BucketWriter.checkAndThrowInterruptedException(BucketWriter.java:649)
+	at org.apache.flume.sink.hdfs.BucketWriter.flush(BucketWriter.java:409)
+	at org.apache.flume.sink.hdfs.HDFSEventSink.process(HDFSEventSink.java:430)
+	... 3 more
+15 Apr 2017 21:06:10,661 INFO  [agent-shutdown-hook] (org.apache.flume.sink.hdfs.HDFSEventSink.stop:480)  - Closing hdfs://localhost:54310/movie//FlumeData
+15 Apr 2017 21:06:10,662 ERROR [hdfs-HDFS-call-runner-4] (org.apache.flume.sink.hdfs.AbstractHDFSWriter.hflushOrSync:268)  - Error while trying to hflushOrSync!
+15 Apr 2017 21:06:10,662 WARN  [agent-shutdown-hook] (org.apache.flume.sink.hdfs.BucketWriter.close:354)  - pre-close flush failed
+java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:323)
+	at org.apache.hadoop.hdfs.DFSClient.access$1200(DFSClient.java:78)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.sync(DFSClient.java:3877)
+	at org.apache.hadoop.fs.FSDataOutputStream.sync(FSDataOutputStream.java:97)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.flume.sink.hdfs.AbstractHDFSWriter.hflushOrSync(AbstractHDFSWriter.java:265)
+	at org.apache.flume.sink.hdfs.HDFSDataStream.sync(HDFSDataStream.java:126)
+	at org.apache.flume.sink.hdfs.BucketWriter$6.call(BucketWriter.java:452)
+	at org.apache.flume.sink.hdfs.BucketWriter$6.call(BucketWriter.java:449)
+	at org.apache.flume.sink.hdfs.BucketWriter$9$1.run(BucketWriter.java:668)
+	at org.apache.flume.auth.SimpleAuthenticator.execute(SimpleAuthenticator.java:50)
+	at org.apache.flume.sink.hdfs.BucketWriter$9.call(BucketWriter.java:665)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+15 Apr 2017 21:06:10,663 INFO  [agent-shutdown-hook] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/movie//FlumeData.1492304478088.tmp
+15 Apr 2017 21:06:10,663 ERROR [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.AbstractHDFSWriter.hflushOrSync:268)  - Error while trying to hflushOrSync!
+15 Apr 2017 21:06:10,664 WARN  [agent-shutdown-hook] (org.apache.flume.sink.hdfs.BucketWriter.close:364)  - failed to close() HDFSWriter for file (hdfs://localhost:54310/movie//FlumeData.1492304478088.tmp). Exception follows.
+java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:323)
+	at org.apache.hadoop.hdfs.DFSClient.access$1200(DFSClient.java:78)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.sync(DFSClient.java:3877)
+	at org.apache.hadoop.fs.FSDataOutputStream.sync(FSDataOutputStream.java:97)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.flume.sink.hdfs.AbstractHDFSWriter.hflushOrSync(AbstractHDFSWriter.java:265)
+	at org.apache.flume.sink.hdfs.HDFSDataStream.close(HDFSDataStream.java:134)
+	at org.apache.flume.sink.hdfs.BucketWriter$3.call(BucketWriter.java:307)
+	at org.apache.flume.sink.hdfs.BucketWriter$3.call(BucketWriter.java:303)
+	at org.apache.flume.sink.hdfs.BucketWriter$9$1.run(BucketWriter.java:668)
+	at org.apache.flume.auth.SimpleAuthenticator.execute(SimpleAuthenticator.java:50)
+	at org.apache.flume.sink.hdfs.BucketWriter$9.call(BucketWriter.java:665)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+15 Apr 2017 21:06:10,665 WARN  [agent-shutdown-hook] (org.apache.flume.sink.hdfs.BucketWriter.close:390)  - failed to rename() file (hdfs://localhost:54310/movie//FlumeData.1492304478088.tmp). Exception follows.
+java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:323)
+	at org.apache.hadoop.hdfs.DFSClient.getFileInfo(DFSClient.java:1057)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:554)
+	at org.apache.hadoop.fs.FileSystem.exists(FileSystem.java:788)
+	at org.apache.flume.sink.hdfs.BucketWriter$8.call(BucketWriter.java:617)
+	at org.apache.flume.sink.hdfs.BucketWriter$8.call(BucketWriter.java:614)
+	at org.apache.flume.sink.hdfs.BucketWriter$9$1.run(BucketWriter.java:668)
+	at org.apache.flume.auth.SimpleAuthenticator.execute(SimpleAuthenticator.java:50)
+	at org.apache.flume.sink.hdfs.BucketWriter$9.call(BucketWriter.java:665)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+15 Apr 2017 21:06:15,164 INFO  [Twitter Stream consumer-1[Receiving stream]] (twitter4j.SLF4JLogger.info:62)  - Task twitter4j.StatusStreamBase$1@419e8639 rejected from java.util.concurrent.ThreadPoolExecutor@e7e29d7[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 448]
+15 Apr 2017 21:09:10,668 WARN  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter$4.call:332)  - Renaming file: hdfs://localhost:54310/movie//FlumeData.1492304478088.tmp failed. Will retry again in 180 seconds.
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@7cece9af rejected from java.util.concurrent.ThreadPoolExecutor@25e2203c[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 587]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:132)
+	at org.apache.flume.sink.hdfs.BucketWriter.callWithTimeout(BucketWriter.java:662)
+	at org.apache.flume.sink.hdfs.BucketWriter.renameBucket(BucketWriter.java:614)
+	at org.apache.flume.sink.hdfs.BucketWriter.access$1000(BucketWriter.java:58)
+	at org.apache.flume.sink.hdfs.BucketWriter$4.call(BucketWriter.java:330)
+	at org.apache.flume.sink.hdfs.BucketWriter$4.call(BucketWriter.java:315)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+15 Apr 2017 21:09:10,670 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: SINK, name: HDFS stopped
+15 Apr 2017 21:09:10,671 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: SINK, name: HDFS. sink.start.time == 1492301867220
+15 Apr 2017 21:09:10,671 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: SINK, name: HDFS. sink.stop.time == 1492304950670
+15 Apr 2017 21:09:10,672 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.batch.complete == 0
+15 Apr 2017 21:09:10,673 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.batch.empty == 405
+15 Apr 2017 21:09:10,673 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.batch.underflow == 112
+15 Apr 2017 21:09:10,674 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.connection.closed.count == 111
+15 Apr 2017 21:09:10,675 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.connection.creation.count == 112
+15 Apr 2017 21:09:10,675 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.connection.failed.count == 5
+15 Apr 2017 21:09:10,676 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.event.drain.attempt == 139
+15 Apr 2017 21:09:10,676 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.event.drain.sucess == 138
+15 Apr 2017 21:09:10,677 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: CHANNEL, name: MemChannel stopped
+15 Apr 2017 21:09:10,678 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.start.time == 1492301867212
+15 Apr 2017 21:09:10,679 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.stop.time == 1492304950677
+15 Apr 2017 21:09:10,679 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.capacity == 10000
+15 Apr 2017 21:09:10,680 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.current.size == 1
+15 Apr 2017 21:09:10,680 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.put.attempt == 139
+15 Apr 2017 21:09:10,681 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.put.success == 139
+15 Apr 2017 21:09:10,681 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.take.attempt == 656
+15 Apr 2017 21:09:10,682 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.take.success == 138
+15 Apr 2017 21:09:10,682 INFO  [agent-shutdown-hook] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider.stop:84)  - Configuration provider stopping
+15 Apr 2017 21:23:32,467 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider.start:62)  - Configuration provider starting
+15 Apr 2017 21:23:32,474 INFO  [conf-file-poller-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider$FileWatcherRunnable.run:134)  - Reloading configuration file:conf/flume-twitter.conf
+15 Apr 2017 21:23:32,482 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:23:32,484 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:23:32,484 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:23:32,484 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:930)  - Added sinks: HDFS Agent: TwitterAgent
+15 Apr 2017 21:23:32,485 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:23:32,485 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:23:32,485 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:23:32,485 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:23:32,486 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:23:32,512 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration.validateConfiguration:140)  - Post-validation flume configuration contains configuration for agents: [TwitterAgent]
+15 Apr 2017 21:23:32,512 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:147)  - Creating channels
+15 Apr 2017 21:23:32,536 INFO  [conf-file-poller-0] (org.apache.flume.channel.DefaultChannelFactory.create:42)  - Creating instance of channel MemChannel type memory
+15 Apr 2017 21:23:32,557 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:201)  - Created channel MemChannel
+15 Apr 2017 21:23:32,559 INFO  [conf-file-poller-0] (org.apache.flume.source.DefaultSourceFactory.create:41)  - Creating instance of source Twitter, type com.cloudera.flume.source.TwitterSource
+15 Apr 2017 21:23:32,744 INFO  [conf-file-poller-0] (org.apache.flume.sink.DefaultSinkFactory.create:42)  - Creating instance of sink: HDFS, type: hdfs
+15 Apr 2017 21:23:32,774 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.getConfiguration:116)  - Channel MemChannel connected to [Twitter, HDFS]
+15 Apr 2017 21:23:32,789 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:137)  - Starting new configuration:{ sourceRunners:{Twitter=EventDrivenSourceRunner: { source:com.cloudera.flume.source.TwitterSource{name:Twitter,state:IDLE} }} sinkRunners:{HDFS=SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@6ed279e2 counterGroup:{ name:null counters:{} } }} channels:{MemChannel=org.apache.flume.channel.MemoryChannel{name: MemChannel}} }
+15 Apr 2017 21:23:32,809 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:144)  - Starting Channel MemChannel
+15 Apr 2017 21:23:32,883 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: CHANNEL, name: MemChannel: Successfully registered new MBean.
+15 Apr 2017 21:23:32,883 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: CHANNEL, name: MemChannel started
+15 Apr 2017 21:23:32,884 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:171)  - Starting Sink HDFS
+15 Apr 2017 21:23:32,884 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:182)  - Starting Source Twitter
+15 Apr 2017 21:23:32,891 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: SINK, name: HDFS: Successfully registered new MBean.
+15 Apr 2017 21:23:32,892 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: SINK, name: HDFS started
+15 Apr 2017 21:23:32,896 INFO  [Twitter Stream consumer-1[initializing]] (twitter4j.SLF4JLogger.info:62)  - Establishing connection.
+15 Apr 2017 21:23:38,512 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.stop:78)  - Stopping lifecycle supervisor 10
+15 Apr 2017 21:23:38,528 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: CHANNEL, name: MemChannel stopped
+15 Apr 2017 21:23:38,529 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.start.time == 1492305812883
+15 Apr 2017 21:23:38,529 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.stop.time == 1492305818528
+15 Apr 2017 21:23:38,530 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.capacity == 10000
+15 Apr 2017 21:23:38,531 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.current.size == 0
+15 Apr 2017 21:23:38,532 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.put.attempt == 0
+15 Apr 2017 21:23:38,532 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.put.success == 0
+15 Apr 2017 21:23:38,533 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.take.attempt == 2
+15 Apr 2017 21:23:38,533 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.take.success == 0
+15 Apr 2017 21:23:38,534 INFO  [agent-shutdown-hook] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider.stop:84)  - Configuration provider stopping
+15 Apr 2017 21:23:38,535 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: SINK, name: HDFS stopped
+15 Apr 2017 21:23:38,535 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: SINK, name: HDFS. sink.start.time == 1492305812892
+15 Apr 2017 21:23:38,535 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: SINK, name: HDFS. sink.stop.time == 1492305818535
+15 Apr 2017 21:23:38,536 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.batch.complete == 0
+15 Apr 2017 21:23:38,536 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.batch.empty == 2
+15 Apr 2017 21:23:38,536 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.batch.underflow == 0
+15 Apr 2017 21:23:38,536 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.connection.closed.count == 0
+15 Apr 2017 21:23:38,536 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.connection.creation.count == 0
+15 Apr 2017 21:23:38,536 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.connection.failed.count == 0
+15 Apr 2017 21:23:38,537 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.event.drain.attempt == 0
+15 Apr 2017 21:23:38,537 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.event.drain.sucess == 0
+15 Apr 2017 21:24:06,986 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider.start:62)  - Configuration provider starting
+15 Apr 2017 21:24:06,994 INFO  [conf-file-poller-0] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider$FileWatcherRunnable.run:134)  - Reloading configuration file:conf/flume-twitter.conf
+15 Apr 2017 21:24:07,002 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:24:07,003 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:24:07,004 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:24:07,004 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:930)  - Added sinks: HDFS Agent: TwitterAgent
+15 Apr 2017 21:24:07,004 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:24:07,004 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:24:07,004 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:24:07,005 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:24:07,005 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration$AgentConfiguration.addProperty:1016)  - Processing:HDFS
+15 Apr 2017 21:24:07,028 INFO  [conf-file-poller-0] (org.apache.flume.conf.FlumeConfiguration.validateConfiguration:140)  - Post-validation flume configuration contains configuration for agents: [TwitterAgent]
+15 Apr 2017 21:24:07,028 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:147)  - Creating channels
+15 Apr 2017 21:24:07,037 INFO  [conf-file-poller-0] (org.apache.flume.channel.DefaultChannelFactory.create:42)  - Creating instance of channel MemChannel type memory
+15 Apr 2017 21:24:07,042 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.loadChannels:201)  - Created channel MemChannel
+15 Apr 2017 21:24:07,043 INFO  [conf-file-poller-0] (org.apache.flume.source.DefaultSourceFactory.create:41)  - Creating instance of source Twitter, type com.cloudera.flume.source.TwitterSource
+15 Apr 2017 21:24:07,200 INFO  [conf-file-poller-0] (org.apache.flume.sink.DefaultSinkFactory.create:42)  - Creating instance of sink: HDFS, type: hdfs
+15 Apr 2017 21:24:07,230 INFO  [conf-file-poller-0] (org.apache.flume.node.AbstractConfigurationProvider.getConfiguration:116)  - Channel MemChannel connected to [Twitter, HDFS]
+15 Apr 2017 21:24:07,250 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:137)  - Starting new configuration:{ sourceRunners:{Twitter=EventDrivenSourceRunner: { source:com.cloudera.flume.source.TwitterSource{name:Twitter,state:IDLE} }} sinkRunners:{HDFS=SinkRunner: { policy:org.apache.flume.sink.DefaultSinkProcessor@6ed279e2 counterGroup:{ name:null counters:{} } }} channels:{MemChannel=org.apache.flume.channel.MemoryChannel{name: MemChannel}} }
+15 Apr 2017 21:24:07,269 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:144)  - Starting Channel MemChannel
+15 Apr 2017 21:24:07,332 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: CHANNEL, name: MemChannel: Successfully registered new MBean.
+15 Apr 2017 21:24:07,332 INFO  [lifecycleSupervisor-1-0] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: CHANNEL, name: MemChannel started
+15 Apr 2017 21:24:07,332 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:171)  - Starting Sink HDFS
+15 Apr 2017 21:24:07,333 INFO  [conf-file-poller-0] (org.apache.flume.node.Application.startAllComponents:182)  - Starting Source Twitter
+15 Apr 2017 21:24:07,339 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.register:119)  - Monitored counter group for type: SINK, name: HDFS: Successfully registered new MBean.
+15 Apr 2017 21:24:07,339 INFO  [lifecycleSupervisor-1-1] (org.apache.flume.instrumentation.MonitoredCounterGroup.start:95)  - Component type: SINK, name: HDFS started
+15 Apr 2017 21:24:07,343 INFO  [Twitter Stream consumer-1[initializing]] (twitter4j.SLF4JLogger.info:62)  - Establishing connection.
+15 Apr 2017 21:24:39,597 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.SLF4JLogger.info:62)  - Connection established.
+15 Apr 2017 21:24:39,597 INFO  [Twitter Stream consumer-1[Establishing connection]] (twitter4j.SLF4JLogger.info:62)  - Receiving status stream.
+15 Apr 2017 21:24:39,736 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 21:24:40,080 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492305879737.tmp
+15 Apr 2017 21:24:46,306 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:24:46,307 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492305879737.tmp
+15 Apr 2017 21:24:46,337 INFO  [hdfs-HDFS-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492305879737.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492305879737
+15 Apr 2017 21:24:46,419 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492305879738.tmp
+15 Apr 2017 21:24:54,531 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:24:54,531 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492305879738.tmp
+15 Apr 2017 21:24:54,580 INFO  [hdfs-HDFS-call-runner-9] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492305879738.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492305879738
+15 Apr 2017 21:24:54,679 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492305879739.tmp
+15 Apr 2017 21:24:59,063 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:24:59,064 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492305879739.tmp
+15 Apr 2017 21:24:59,087 INFO  [hdfs-HDFS-call-runner-4] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492305879739.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492305879739
+15 Apr 2017 21:24:59,106 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492305879740.tmp
+15 Apr 2017 21:25:13,781 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:25:13,782 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492305879740.tmp
+15 Apr 2017 21:25:13,798 INFO  [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492305879740.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492305879740
+15 Apr 2017 21:25:13,819 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492305879741.tmp
+15 Apr 2017 21:25:21,415 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:25:21,415 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492305879741.tmp
+15 Apr 2017 21:25:21,448 INFO  [hdfs-HDFS-call-runner-5] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492305879741.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492305879741
+15 Apr 2017 21:25:21,469 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492305879742.tmp
+15 Apr 2017 21:25:51,495 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492305879742.tmp
+15 Apr 2017 21:25:51,516 INFO  [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492305879742.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492305879742
+15 Apr 2017 21:25:51,519 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 21:25:55,663 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 21:25:55,723 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492305955664.tmp
+15 Apr 2017 21:26:08,320 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:26:08,320 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492305955664.tmp
+15 Apr 2017 21:26:08,387 INFO  [hdfs-HDFS-call-runner-6] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492305955664.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492305955664
+15 Apr 2017 21:26:08,414 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492305955665.tmp
+15 Apr 2017 21:26:11,819 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:26:11,819 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492305955665.tmp
+15 Apr 2017 21:26:11,830 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492305955665.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492305955665
+15 Apr 2017 21:26:11,849 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492305955666.tmp
+15 Apr 2017 21:26:17,904 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:26:17,904 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492305955666.tmp
+15 Apr 2017 21:26:17,971 INFO  [hdfs-HDFS-call-runner-6] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492305955666.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492305955666
+15 Apr 2017 21:26:18,011 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492305955667.tmp
+15 Apr 2017 21:26:30,105 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:26:30,106 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492305955667.tmp
+15 Apr 2017 21:26:30,115 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492305955667.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492305955667
+15 Apr 2017 21:26:30,139 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492305955668.tmp
+15 Apr 2017 21:26:36,208 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:26:36,209 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492305955668.tmp
+15 Apr 2017 21:26:36,217 INFO  [hdfs-HDFS-call-runner-6] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492305955668.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492305955668
+15 Apr 2017 21:26:36,237 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492305955669.tmp
+15 Apr 2017 21:27:06,314 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492305955669.tmp
+15 Apr 2017 21:27:06,337 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492305955669.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492305955669
+15 Apr 2017 21:27:06,340 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 21:27:09,384 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 21:27:09,408 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492306029385.tmp
+15 Apr 2017 21:27:27,462 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:27:27,463 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492306029385.tmp
+15 Apr 2017 21:27:27,509 INFO  [hdfs-HDFS-call-runner-6] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492306029385.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492306029385
+15 Apr 2017 21:27:27,544 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492306029386.tmp
+15 Apr 2017 21:27:35,553 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:27:35,554 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492306029386.tmp
+15 Apr 2017 21:27:35,570 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492306029386.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492306029386
+15 Apr 2017 21:27:35,623 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492306029387.tmp
+15 Apr 2017 21:27:54,244 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:27:54,245 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492306029387.tmp
+15 Apr 2017 21:27:54,270 INFO  [hdfs-HDFS-call-runner-6] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492306029387.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492306029387
+15 Apr 2017 21:27:54,309 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492306029388.tmp
+15 Apr 2017 21:27:57,995 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:27:57,996 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492306029388.tmp
+15 Apr 2017 21:27:58,025 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492306029388.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492306029388
+15 Apr 2017 21:27:58,072 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492306029389.tmp
+15 Apr 2017 21:28:17,528 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:28:17,529 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492306029389.tmp
+15 Apr 2017 21:28:17,573 INFO  [hdfs-HDFS-call-runner-6] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492306029389.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492306029389
+15 Apr 2017 21:28:17,616 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492306029390.tmp
+15 Apr 2017 21:28:42,707 WARN  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.append:521)  - Block Under-replication detected. Rotating file.
+15 Apr 2017 21:28:42,708 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492306029390.tmp
+15 Apr 2017 21:28:42,735 INFO  [hdfs-HDFS-call-runner-1] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492306029390.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492306029390
+15 Apr 2017 21:28:42,753 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492306029391.tmp
+15 Apr 2017 21:29:12,778 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492306029391.tmp
+15 Apr 2017 21:29:12,805 INFO  [hdfs-HDFS-call-runner-6] (org.apache.flume.sink.hdfs.BucketWriter$8.call:618)  - Renaming hdfs://localhost:54310/unitedairline/FlumeData.1492306029391.tmp to hdfs://localhost:54310/unitedairline/FlumeData.1492306029391
+15 Apr 2017 21:29:12,808 INFO  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.HDFSEventSink$1.run:382)  - Writer callback called.
+15 Apr 2017 21:29:34,513 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSDataStream.configure:57)  - Serializer = TEXT, UseRawLocalFileSystem = false
+15 Apr 2017 21:29:34,530 INFO  [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.BucketWriter.open:231)  - Creating hdfs://localhost:54310/unitedairline//FlumeData.1492306174514.tmp
+15 Apr 2017 21:29:35,720 INFO  [agent-shutdown-hook] (org.apache.flume.lifecycle.LifecycleSupervisor.stop:78)  - Stopping lifecycle supervisor 10
+15 Apr 2017 21:29:35,722 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: CHANNEL, name: MemChannel stopped
+15 Apr 2017 21:29:35,726 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.start.time == 1492305847332
+15 Apr 2017 21:29:35,737 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.stop.time == 1492306175722
+15 Apr 2017 21:29:35,738 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.capacity == 10000
+15 Apr 2017 21:29:35,738 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.current.size == 0
+15 Apr 2017 21:29:35,739 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.put.attempt == 22
+15 Apr 2017 21:29:35,739 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.put.success == 22
+15 Apr 2017 21:29:35,739 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.take.attempt == 86
+15 Apr 2017 21:29:35,739 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: CHANNEL, name: MemChannel. channel.event.take.success == 21
+15 Apr 2017 21:29:35,740 INFO  [agent-shutdown-hook] (org.apache.flume.node.PollingPropertiesFileConfigurationProvider.stop:84)  - Configuration provider stopping
+15 Apr 2017 21:29:35,746 ERROR [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.sink.hdfs.HDFSEventSink.process:447)  - process failed
+java.lang.InterruptedException: Timed out before HDFS call was made. Your hdfs.callTimeout might be set too low or HDFS calls are taking too long.
+	at org.apache.flume.sink.hdfs.BucketWriter.checkAndThrowInterruptedException(BucketWriter.java:649)
+	at org.apache.flume.sink.hdfs.BucketWriter.flush(BucketWriter.java:409)
+	at org.apache.flume.sink.hdfs.HDFSEventSink.process(HDFSEventSink.java:430)
+	at org.apache.flume.sink.DefaultSinkProcessor.process(DefaultSinkProcessor.java:67)
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145)
+	at java.lang.Thread.run(Thread.java:745)
+15 Apr 2017 21:29:35,749 ERROR [SinkRunner-PollingRunner-DefaultSinkProcessor] (org.apache.flume.SinkRunner$PollingRunner.run:158)  - Unable to deliver event. Exception follows.
+org.apache.flume.EventDeliveryException: java.lang.InterruptedException: Timed out before HDFS call was made. Your hdfs.callTimeout might be set too low or HDFS calls are taking too long.
+	at org.apache.flume.sink.hdfs.HDFSEventSink.process(HDFSEventSink.java:451)
+	at org.apache.flume.sink.DefaultSinkProcessor.process(DefaultSinkProcessor.java:67)
+	at org.apache.flume.SinkRunner$PollingRunner.run(SinkRunner.java:145)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: Timed out before HDFS call was made. Your hdfs.callTimeout might be set too low or HDFS calls are taking too long.
+	at org.apache.flume.sink.hdfs.BucketWriter.checkAndThrowInterruptedException(BucketWriter.java:649)
+	at org.apache.flume.sink.hdfs.BucketWriter.flush(BucketWriter.java:409)
+	at org.apache.flume.sink.hdfs.HDFSEventSink.process(HDFSEventSink.java:430)
+	... 3 more
+15 Apr 2017 21:29:37,036 INFO  [Twitter Stream consumer-1[Receiving stream]] (twitter4j.SLF4JLogger.info:62)  - Task twitter4j.StatusStreamBase$1@341ad0fa rejected from java.util.concurrent.ThreadPoolExecutor@4c8de7cf[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 51]
+15 Apr 2017 21:29:40,755 INFO  [agent-shutdown-hook] (org.apache.flume.sink.hdfs.HDFSEventSink.stop:480)  - Closing hdfs://localhost:54310/unitedairline//FlumeData
+15 Apr 2017 21:29:40,756 ERROR [hdfs-HDFS-call-runner-9] (org.apache.flume.sink.hdfs.AbstractHDFSWriter.hflushOrSync:268)  - Error while trying to hflushOrSync!
+15 Apr 2017 21:29:40,756 WARN  [agent-shutdown-hook] (org.apache.flume.sink.hdfs.BucketWriter.close:354)  - pre-close flush failed
+java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:323)
+	at org.apache.hadoop.hdfs.DFSClient.access$1200(DFSClient.java:78)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.sync(DFSClient.java:3877)
+	at org.apache.hadoop.fs.FSDataOutputStream.sync(FSDataOutputStream.java:97)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.flume.sink.hdfs.AbstractHDFSWriter.hflushOrSync(AbstractHDFSWriter.java:265)
+	at org.apache.flume.sink.hdfs.HDFSDataStream.sync(HDFSDataStream.java:126)
+	at org.apache.flume.sink.hdfs.BucketWriter$6.call(BucketWriter.java:452)
+	at org.apache.flume.sink.hdfs.BucketWriter$6.call(BucketWriter.java:449)
+	at org.apache.flume.sink.hdfs.BucketWriter$9$1.run(BucketWriter.java:668)
+	at org.apache.flume.auth.SimpleAuthenticator.execute(SimpleAuthenticator.java:50)
+	at org.apache.flume.sink.hdfs.BucketWriter$9.call(BucketWriter.java:665)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+15 Apr 2017 21:29:40,757 INFO  [agent-shutdown-hook] (org.apache.flume.sink.hdfs.BucketWriter.close:357)  - Closing hdfs://localhost:54310/unitedairline//FlumeData.1492306174514.tmp
+15 Apr 2017 21:29:40,757 ERROR [hdfs-HDFS-call-runner-0] (org.apache.flume.sink.hdfs.AbstractHDFSWriter.hflushOrSync:268)  - Error while trying to hflushOrSync!
+15 Apr 2017 21:29:40,758 WARN  [agent-shutdown-hook] (org.apache.flume.sink.hdfs.BucketWriter.close:364)  - failed to close() HDFSWriter for file (hdfs://localhost:54310/unitedairline//FlumeData.1492306174514.tmp). Exception follows.
+java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:323)
+	at org.apache.hadoop.hdfs.DFSClient.access$1200(DFSClient.java:78)
+	at org.apache.hadoop.hdfs.DFSClient$DFSOutputStream.sync(DFSClient.java:3877)
+	at org.apache.hadoop.fs.FSDataOutputStream.sync(FSDataOutputStream.java:97)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.flume.sink.hdfs.AbstractHDFSWriter.hflushOrSync(AbstractHDFSWriter.java:265)
+	at org.apache.flume.sink.hdfs.HDFSDataStream.close(HDFSDataStream.java:134)
+	at org.apache.flume.sink.hdfs.BucketWriter$3.call(BucketWriter.java:307)
+	at org.apache.flume.sink.hdfs.BucketWriter$3.call(BucketWriter.java:303)
+	at org.apache.flume.sink.hdfs.BucketWriter$9$1.run(BucketWriter.java:668)
+	at org.apache.flume.auth.SimpleAuthenticator.execute(SimpleAuthenticator.java:50)
+	at org.apache.flume.sink.hdfs.BucketWriter$9.call(BucketWriter.java:665)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+15 Apr 2017 21:29:40,761 WARN  [agent-shutdown-hook] (org.apache.flume.sink.hdfs.BucketWriter.close:390)  - failed to rename() file (hdfs://localhost:54310/unitedairline//FlumeData.1492306174514.tmp). Exception follows.
+java.io.IOException: Filesystem closed
+	at org.apache.hadoop.hdfs.DFSClient.checkOpen(DFSClient.java:323)
+	at org.apache.hadoop.hdfs.DFSClient.getFileInfo(DFSClient.java:1057)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:554)
+	at org.apache.hadoop.fs.FileSystem.exists(FileSystem.java:788)
+	at org.apache.flume.sink.hdfs.BucketWriter$8.call(BucketWriter.java:617)
+	at org.apache.flume.sink.hdfs.BucketWriter$8.call(BucketWriter.java:614)
+	at org.apache.flume.sink.hdfs.BucketWriter$9$1.run(BucketWriter.java:668)
+	at org.apache.flume.auth.SimpleAuthenticator.execute(SimpleAuthenticator.java:50)
+	at org.apache.flume.sink.hdfs.BucketWriter$9.call(BucketWriter.java:665)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+15 Apr 2017 21:32:40,763 WARN  [hdfs-HDFS-roll-timer-0] (org.apache.flume.sink.hdfs.BucketWriter$4.call:332)  - Renaming file: hdfs://localhost:54310/unitedairline//FlumeData.1492306174514.tmp failed. Will retry again in 180 seconds.
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@3e7ddaa2 rejected from java.util.concurrent.ThreadPoolExecutor@389ce1bb[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 102]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:132)
+	at org.apache.flume.sink.hdfs.BucketWriter.callWithTimeout(BucketWriter.java:662)
+	at org.apache.flume.sink.hdfs.BucketWriter.renameBucket(BucketWriter.java:614)
+	at org.apache.flume.sink.hdfs.BucketWriter.access$1000(BucketWriter.java:58)
+	at org.apache.flume.sink.hdfs.BucketWriter$4.call(BucketWriter.java:330)
+	at org.apache.flume.sink.hdfs.BucketWriter$4.call(BucketWriter.java:315)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+15 Apr 2017 21:32:40,764 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:149)  - Component type: SINK, name: HDFS stopped
+15 Apr 2017 21:32:40,764 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:155)  - Shutdown Metric for type: SINK, name: HDFS. sink.start.time == 1492305847339
+15 Apr 2017 21:32:40,765 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:161)  - Shutdown Metric for type: SINK, name: HDFS. sink.stop.time == 1492306360764
+15 Apr 2017 21:32:40,765 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.batch.complete == 0
+15 Apr 2017 21:32:40,765 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.batch.empty == 44
+15 Apr 2017 21:32:40,765 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.batch.underflow == 20
+15 Apr 2017 21:32:40,765 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.connection.closed.count == 19
+15 Apr 2017 21:32:40,765 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.connection.creation.count == 20
+15 Apr 2017 21:32:40,765 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.connection.failed.count == 5
+15 Apr 2017 21:32:40,765 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.event.drain.attempt == 22
+15 Apr 2017 21:32:40,765 INFO  [agent-shutdown-hook] (org.apache.flume.instrumentation.MonitoredCounterGroup.stop:177)  - Shutdown Metric for type: SINK, name: HDFS. sink.event.drain.sucess == 21
